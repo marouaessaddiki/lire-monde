@@ -114,7 +114,6 @@ window.openEditModal = function(id) {
   submitForm.textContent = "Enregistrer";
   formModal.classList.remove("hidden");
 };
-
 /* CLOSE FORM MODAL */
 function closeForm() {
   formModal.classList.add("hidden");
@@ -122,3 +121,50 @@ function closeForm() {
 closeFormModal.addEventListener("click", closeForm);
 cancelForm.addEventListener("click", closeForm);
 formModal.addEventListener("click", e => { if (e.target === formModal) closeForm(); });
+
+/* SUBMIT (ADD / EDIT) */
+submitForm.addEventListener("click", async () => {
+  const title = fieldTitle.value.trim();
+  const author = fieldAuthor.value.trim();
+  const genre = fieldGenre.value;
+
+  if (!title || !author || !genre) {
+    alert("Titre, auteur et genre sont obligatoires.");
+    return;
+  }
+
+  const data = {
+    title,
+    author,
+    genre,
+    description: fieldDescription.value.trim(),
+    image: fieldImage.value.trim() || "image/default.jpg",
+    aLire: false
+  };
+
+  const id = editBookId.value;
+
+  try {
+    if (id) {
+      await fetch(${API_URL}/${id}, {
+        method: "PATCH",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(data)
+      });
+    } else {
+      await fetch(API_URL, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(data)
+      });
+    }
+
+    closeForm();
+    fetchBooks();
+
+  } catch (err) {
+    console.error(err);
+    alert("Erreur lors de l'enregistrement.");
+  }
+});
+
