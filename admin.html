@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LireMonde — Admin</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#c97b4b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+      LireMonde
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="index.html#aLireSection">À lire</a></li>
+      <li><a href="admin.html" class="active">Admin</a></li>
+    </ul>
+    <input type="text" id="adminSearch" placeholder="Rechercher un livre, auteur, genre...">
+  </nav>
+
+  <!-- Main -->
+  <div class="admin-wrap">
+
+    <div class="admin-header">
+      <h1>Dashboard</h1>
+      <button class="btn-add" id="openAddModal">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+        Ajouter un nouveau livre
+      </button>
+    </div>
+
+    <!-- Table -->
+    <div class="table-wrap">
+      <table id="adminTable">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Couverture</th>
+            <th>Titre</th>
+            <th>Auteur</th>
+            <th>Genre</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody id="adminTableBody">
+          <!-- rows injected by JS -->
+        </tbody>
+      </table>
+    </div>
+
+  </div>
+
+  <!-- Modal Ajout / Modifier -->
+  <div id="formModal" class="modal hidden">
+    <div class="modal-content form-modal-content">
+
+      <div class="form-modal-header">
+        <h2 id="formModalTitle">Ajouter un livre</h2>
+        <button class="close-btn" id="closeFormModal" aria-label="Fermer">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
+      </div>
+
+      <div class="form-modal-body">
+        <input type="hidden" id="editBookId">
+
+        <div class="form-group">
+          <label>Titre</label>
+          <input type="text" id="fieldTitle" placeholder="Ex: Les Misérables">
+        </div>
+
+        <div class="form-group">
+          <label>Auteur</label>
+          <input type="text" id="fieldAuthor" placeholder="Ex: Victor Hugo">
+        </div>
+
+        <div class="form-group">
+          <label>Genre</label>
+          <select id="fieldGenre">
+            <option value="">-- Choisir --</option>
+            <option value="Drama">Drama</option>
+            <option value="Classique">Classique</option>
+            <option value="Science Fiction">Science Fiction</option>
+            <option value="Fantasy">Fantasy</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label>Description</label>
+          <textarea id="fieldDescription" placeholder="Résumé du livre..." rows="3"></textarea>
+        </div>
+
+        <div class="form-group">
+          <label>URL de couverture</label>
+          <input type="text" id="fieldImage" placeholder="image/monlivre.jpg">
+        </div>
+
+        <div class="form-actions">
+          <button class="btn-submit" id="submitForm">Ajouter</button>
+          <button class="btn-cancel" id="cancelForm">Annuler</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Confirm Delete Modal -->
+  <div id="deleteModal" class="modal hidden">
+    <div class="modal-content delete-modal-content">
+      <h2>Supprimer ce livre ?</h2>
+      <p id="deleteBookName"></p>
+      <div class="form-actions">
+        <button class="btn-delete-confirm" id="confirmDelete">Supprimer</button>
+        <button class="btn-cancel" id="cancelDelete">Annuler</button>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2026 LireMonde — Plateforme de lecture numérique</p>
+  </footer>
+
+  <script src="admin.js"></script>
+</body>
+</html>

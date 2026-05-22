@@ -1,0 +1,140 @@
+{
+  "books": [
+    {
+      "id": "1",
+      "title": "Kit Runner",
+      "author": "Khaled Hosseini",
+      "genre": "Drama",
+      "image": "image/7Sj3tuOz-dtKXr40-0u1QSLgF7BJ1oGicCgME-nsO01fjkcO2qoN3iHJXo1cimFi6QTqYgkKva6zhTf4XAP8q2E8yhN30cbinsf5amn6ebXSpN9Fw4N-5ZzhCvpWWkXB4M2vqI-YwKDP87Fl2fP_PSFHtUk1XXkBTZt92RqK0VjB0AQBGduSZSnGqneeNYTh.jpg",
+      "description": "A story about friendship and war.",
+      "aLire": false
+    },
+    {
+      "id": "2",
+      "title": "Don Quixote",
+      "author": "Miguel de Cervantes",
+      "genre": "Classique",
+      "image": "image/1ctomt1kCkK7bV9SQelbG2mrmBmuy49GJlQurXCQskfLnJgzlpsZPcyNCTCEYjS1mCf_Skymx1D8cGAmPI0WCxRk8vahz-M4MZRqqiQMXNly0aDbJZgQBPxMWmrwtJCRQ7X4wTxjr3t4GM4w1x6isFNQQjmnZfvTebMTkxXv9xgnPbbPUmSRzKqmbM_W_3Oi.jpg",
+      "description": "Classic Spanish novel.",
+      "aLire": false
+    },
+    {
+      "id": "3",
+      "title": "Dune",
+      "author": "Frank Herbert",
+      "genre": "Science Fiction",
+      "image": "image/YO-fcvRdTbEJ5Nae5yK3SLH1LLLS7fTu0zSoUDRxnP8RAPaaurUcfHmwV7FphneMOe61fFXT4J0UCeCAVgZhLi1Xt_9-I1GFLvo6XA-wXe1PZyD9q687glo30u56aFhW1E6K_b_-BSfBGQmebSizJO1KsX7VDNoP-xqgFHTNE3QKrAfX3REyUmMdYSVYnB_T.jpg",
+      "description": "Epic sci-fi on Arrakis.",
+      "aLire": false
+    },
+    {
+      "id": "4",
+      "title": "The Notebook",
+      "author": "Nicholas Sparks",
+      "genre": "Drama",
+      "image": "image/rAXJa1_yOJz4neQ3R6jZ1SHNTlUtZZzCWd7muSl7H2IOH_4E-kNbRKtmQBxG4l7c8Qg_2U80Bo86qgVQ7WTwhgWdo4fSx5DDVY3zqzCnS8erXhC73KHDb3Zryr1Mb1IlJ5vBIfristO0hF1lWsbeZj5VSKFoZWOOsNbTQaWXdec93UV_XtIBGOc0rNW4i2pN.jpg",
+      "description": "Romantic love story.",
+      "aLire": false
+    },
+    {
+      "id": "5",
+      "title": "The Great Gatsby",
+      "author": "F. Scott Fitzgerald",
+      "genre": "Classique",
+      "image": "image/aqULH-HgUjRg_k2wUnwHR7WUEwWC_iMI1gIUj24_muD_LaGCTCja4xartST1REYKUVxYtTa71FbUuf57W6AAhhxiqqDNJUxrwmgKMUiKEfvUBuws4b8CZL2rQr_i4wyaySSuAuhfoKLQErWd1w4gxPgiPor16ttI-lRckL18bf4odCrK_bPiBerPPbCmx0KE.jpg",
+      "description": "American classic novel.",
+      "aLire": false
+    },
+    {
+      "id": "6",
+      "title": "Pride and Prejudice",
+      "author": "Jane Austen",
+      "genre": "Classique",
+      "image": "image/9sCI20yhtsynpQSM7d3ZdRRHl2GbGfogVXZR-P6Wl6e5xw_aHMzDsMuh7crT_oCne5RyaiI-E55dXs2JjBHCDpWubrVvTlIXs8c0PSTPtlUnjc7xJo9IKUIGIDnLk5ljBk-51Bw3uNhHSvGkX-_OeMPtpqCjgJfSV52PHJtQJEW1HZ8HQxPQwdVHs1tiu9Ed.jpg",
+      "description": "Love and society story.",
+      "aLire": false
+    },
+    {
+      "id": "7",
+      "title": "Les Misérables",
+      "author": "Victor Hugo",
+      "genre": "Drama",
+      "image": "image/tkoSKzKqIjze1bvqUYby1Q4nOFJvBpcBgIhInQGGrz6KDUl1TLOih2gqyt4lclOTWvof1kI9NrJUtRxgfQkki1d2ILs0uYTmE-e7HEumP_kt6vZrZRU0H0Mc0QGB_rs2X4pTc3_xrZ8_mQNcCVzFLIFwJ7WwofiNabvzuMul57ggn7fmtcgsfSf92flvzlEf.jpg",
+      "description": "Struggle and redemption in France.",
+      "aLire": true
+    },
+    {
+      "id": "8",
+      "title": "The Left Hand of Darkness",
+      "author": "Ursula K. Le Guin",
+      "genre": "Science Fiction",
+      "image": "image/uUeTW5UFY61WfQ12zW8gaKdQkxQ-aKnUso7ssB9lkGl02gzm_bV-_5Q5gW7F6hRtSQ3roWRvCEtO_Lc35hWsZ0yOi6KzD5RgYsJZFUkIR87eVB6qEy1W6UviCJlTsP6ZkSGIIuPE0rXahjWUvCh_Ao1uE6SnwbLWB0wSQBumS7MDfgWWSQ4mef93OBREnZ5i.jpg",
+      "description": "Sci-fi exploration of gender and society.",
+      "aLire": false
+    },
+    {
+      "id": "9",
+      "title": "The Name of the Wind",
+      "author": "Patrick Rothfuss",
+      "genre": "Fantasy",
+      "image": "image/sRM1Qx364sV7orZonR22sgSSofZOyBOOsLVfmB9y8L_m7XNqeuBVMwOOV_3p3_vy-hcuN1bb_lDipyTer29HQvKDT9Eb1shMF0PjyrKsDDRVdMTJk4b76POJu6u248Jhjpw8ijz76uMbhe3JmZirekcA4_jh6mvpjy_JDNuGXylhYFA7b58B0seEC9u08M7o.jpg",
+      "description": "Legend of Kvothe.",
+      "aLire": false
+    },
+    {
+      "id": "10",
+      "title": "The Fault in Our Stars",
+      "author": "John Green",
+      "genre": "Drama",
+      "image": "image/R2b_5jH0tjgEvqbzYrtlhBPfpPq_bVvCw9RJC87mWesaMG6f-2H4TQhbzUa-5iO83AZ-lBP8se05YM9VqFNohvSkCt8W44fcW1ZYUF8IT6XTiY5eAnIY-VohktHwyGBY8NxWO5ic7B1K73HWOW7M_XdnqIPRqhiZEw6xucHplOUx2t78bku688fa2I-1jdhl.jpg",
+      "description": "image/R2b_5jH0tjgEvqbzYrtlhBPfpPq_bVvCw9RJC87mWesaMG6f-2H4TQhbzUa-5iO83AZ-lBP8se05YM9VqFNohvSkCt8W44fcW1ZYUF8IT6XTiY5eAnIY-VohktHwyGBY8NxWO5ic7B1K73HWOW7M_XdnqIPRqhiZEw6xucHplOUx2t78bku688fa2I-1jdhl.jpg",
+      "aLire": true
+    },
+    {
+      "id": "11",
+      "title": "Hunger Games",
+      "author": "Suzanne Collins",
+      "genre": "Science Fiction",
+      "image": "image/sBn3z7ACbJQ7n_sAv2AArg9ouRY9m1toSudadD4hhpqwmo-E0jbzdCxKZmAvvWL9DMcj9y039EZ-H3-9wFfT6JRWmMlo3JQP_M6KsjIpGJAW1VPde51INQwEpILlwKRPTSM7BLvvns3Naec0PL4fOtvaXY3TD2yl9b4fbEkei5DXYhvfh-TZYRDqp9FFBa6w.jpg",
+      "description": "Survival dystopia competition.",
+      "aLire": false
+    },
+    {
+      "id": "12",
+      "title": "1984",
+      "author": "George Orwell",
+      "genre": "Science Fiction",
+      "image": "image/ldnpDUci7Bunl8ggnpvKQHVvZY-rV5Jwy0EUsFG5lsz40N43Ou6uzKzSM_WhwytceBeZMJGpKENGRQaxOSl48MlCO7aT6iuTk9Sx0EDx9_-6_PPjjEe-UaxUZiFib_XL0E76FXmXCnz7-fTMiinnfyLK-8dIOm6qsDcIr0H0E0n71Yt7kb78PFKjeYUehcfQ.jpg",
+      "description": "Big Brother dystopia.",
+      "aLire": false
+    },
+    {
+      "id": "13",
+      "title": "Shadow and Bone",
+      "author": "Leigh Bardugo",
+      "genre": "Fantasy",
+      "image": "image/LM4eqL1Ub-E-mjflkISm7Lxg07eTiLwAtxEGaQsmQ4XL04E2jN5QsfZwPGqS5tMkE2GmfjN66zjMrnh8lvBx853jrzxMZyGNbhxGp6RwrXjEZXiKR4YL_Lsbxk3M-08lzgmor4jgol4ilBVBXAyC1s1KnKwHK2ZRbkV-qosOpob4eZ_PZJnY4xHFSYxmfm_w.jpg",
+      "description": "",
+      "aLire": true
+    },
+    {
+      "id": "14",
+      "title": "Eragon",
+      "author": "Christopher Paolini",
+      "genre": "Fantasy",
+      "image": "image/C6W_q7uvSp7QzYyTXL4dYJsESOyekmYNc4I6yCEzSb3YFDDrIUx_NzH7CwAkd3Q216CgULcGcAAea0m3-JW1B6XgyGOSCjdi7YOxTMXFqAVVppR8vuDY8-cYkviNMyYzAmhIzaNwsMrgT_OlEkpRUoNe7AvhxD9NOKTGdh2trIrxTJFG3nBE5SEoyj8uuLK3.jpg",
+      "description": "",
+      "aLire": false
+    },
+    {
+      "id": "15",
+      "title": "The Chronicles of Narnia",
+      "author": "C.S. Lewis",
+      "genre": "Fantasy",
+      "image": "image/narnai.jpg",
+      "description": "Magic world of Narnia.",
+      "aLire": true
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
