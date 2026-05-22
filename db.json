@@ -43,7 +43,7 @@
       "genre": "Classique",
       "image": "image/aqULH-HgUjRg_k2wUnwHR7WUEwWC_iMI1gIUj24_muD_LaGCTCja4xartST1REYKUVxYtTa71FbUuf57W6AAhhxiqqDNJUxrwmgKMUiKEfvUBuws4b8CZL2rQr_i4wyaySSuAuhfoKLQErWd1w4gxPgiPor16ttI-lRckL18bf4odCrK_bPiBerPPbCmx0KE.jpg",
       "description": "American classic novel.",
-      "aLire": false
+      "aLire": true
     },
     {
       "id": "6",
@@ -61,7 +61,7 @@
       "genre": "Drama",
       "image": "image/tkoSKzKqIjze1bvqUYby1Q4nOFJvBpcBgIhInQGGrz6KDUl1TLOih2gqyt4lclOTWvof1kI9NrJUtRxgfQkki1d2ILs0uYTmE-e7HEumP_kt6vZrZRU0H0Mc0QGB_rs2X4pTc3_xrZ8_mQNcCVzFLIFwJ7WwofiNabvzuMul57ggn7fmtcgsfSf92flvzlEf.jpg",
       "description": "Struggle and redemption in France.",
-      "aLire": false
+      "aLire": true
     },
     {
       "id": "8",
@@ -88,7 +88,7 @@
       "genre": "Drama",
       "image": "image/R2b_5jH0tjgEvqbzYrtlhBPfpPq_bVvCw9RJC87mWesaMG6f-2H4TQhbzUa-5iO83AZ-lBP8se05YM9VqFNohvSkCt8W44fcW1ZYUF8IT6XTiY5eAnIY-VohktHwyGBY8NxWO5ic7B1K73HWOW7M_XdnqIPRqhiZEw6xucHplOUx2t78bku688fa2I-1jdhl.jpg",
       "description": "image/R2b_5jH0tjgEvqbzYrtlhBPfpPq_bVvCw9RJC87mWesaMG6f-2H4TQhbzUa-5iO83AZ-lBP8se05YM9VqFNohvSkCt8W44fcW1ZYUF8IT6XTiY5eAnIY-VohktHwyGBY8NxWO5ic7B1K73HWOW7M_XdnqIPRqhiZEw6xucHplOUx2t78bku688fa2I-1jdhl.jpg",
-      "aLire": false
+      "aLire": true
     },
     {
       "id": "11",
