@@ -87,3 +87,106 @@ window.filterBooks = function (genre, btn) {
   displayBooks(filtered);
 };
 
+/* SEARCH */
+searchInput.addEventListener("input", () => {
+  const val = searchInput.value.toLowerCase();
+
+  const filtered = books.filter(b =>
+    (b.title || "").toLowerCase().includes(val) ||
+    (b.author || "").toLowerCase().includes(val)
+  );
+
+  displayBooks(filtered);
+});
+
+/* OPEN MODAL */
+window.openModal = function (id) {
+  currentBook = books.find(b => b.id === id);
+  if (!currentBook) return;
+
+  modal.classList.remove("hidden");
+
+  modalImage.src = currentBook.image;
+  modalImage.alt = currentBook.title;
+  modalTitle.textContent = currentBook.title;
+  modalAuthor.textContent = currentBook.author;
+  modalGenre.textContent = currentBook.genre;
+  modalDescription.textContent = currentBook.description || "Aucune description disponible.";
+
+  updateButton();
+};
+
+/* CLOSE MODAL */
+function closeTheModal() {
+  modal.classList.add("hidden");
+}
+
+closeModal.addEventListener("click", closeTheModal);
+closeModalBtn.addEventListener("click", closeTheModal);
+
+modal.addEventListener("click", (e) => {
+  if (e.target === modal) closeTheModal();
+});
+
+/* BUTTON STATE */
+function updateButton() {
+  toggleReadBtn.textContent = currentBook.aLire
+    ? "✓ Retirer de À lire"
+    : "+ Ajouter à À lire";
+}
+
+/* TOGGLE A LIRE */
+toggleReadBtn.addEventListener("click", async () => {
+  if (!currentBook) return;
+
+  try {
+    await fetch(`${API_URL}/${currentBook.id}`, {
+      method: "PATCH",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ aLire: !currentBook.aLire })
+    });
+
+    currentBook.aLire = !currentBook.aLire;
+    const bookInList = books.find(b => b.id === currentBook.id);
+    if (bookInList) bookInList.aLire = currentBook.aLire;
+
+    updateButton();
+    renderALire();
+
+  } catch (err) {
+    console.error(err);
+  }
+});
+
+/* A LIRE SECTION */
+function renderALire() {
+  aLireContainer.innerHTML = "";
+
+  const list = books.filter(b => b.aLire);
+
+  if (aLireCount) aLireCount.textContent = list.length + " livre" + (list.length > 1 ? "s" : "");
+
+  if (list.length === 0) {
+    aLireContainer.innerHTML = `<p class="alire-empty">Aucun livre dans votre liste.</p>`;
+    return;
+  }
+
+  list.forEach(book => {
+    const div = document.createElement("div");
+    div.classList.add("alire-card");
+
+    div.innerHTML = `
+      <img src="${book.image}" alt="${book.title}" loading="lazy" onerror="this.style.background='#e0d9f0';this.removeAttribute('src')">
+      <div class="alire-card-body">
+        <h3>${book.title}</h3>
+        <p>${book.author}</p>
+      </div>
+    `;
+
+    div.addEventListener("click", () => openModal(book.id));
+    aLireContainer.appendChild(div);
+  });
+}
+
+/* INIT */
+fetchBooks();
