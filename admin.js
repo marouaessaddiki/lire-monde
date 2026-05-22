@@ -166,5 +166,13 @@ submitForm.addEventListener("click", async () => {
     console.error(err);
     alert("Erreur lors de l'enregistrement.");
   }
-});
+});/* OPEN DELETE MODAL */
+window.openDeleteModal = function(id) {
+  const book = books.find(b => b.id === id);
+  if (!book) return;
+  bookToDeleteId = id;
+  deleteBookName.textContent = "${book.title}" sera supprimé définitivement.;
+  deleteModal.classList.remove("hidden");
+};
+
 
